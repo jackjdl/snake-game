@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|VT323');
+
+body,html {
+  background-color: rgb(7,54,92);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+h1 {
+  font-family: 'VT323', monospace;
+  font-size: 80px;
+  line-height: 0;
+  color: rgb(20,172,223);
+}
+
+h2 {
+  font-family: 'VT323', monospace;
+  font-size: 50px;
+  line-height: 0;
+  color: rgb(20,172,223);
+}
+
+h3 {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  line-height: 0;
+  color: rgb(20,172,223);
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  line-height: 0;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+a {
+  font-family: 'VT323', monospace;
+  color: rgb(20,172,223);
+  font-size: 22px;
+}
+
+
+#gameOver {
+  width: 600px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  opacity: 0;
+  background-color: rgb(7,54,92);
+  position: relative;
+  transition:opacity 0.3s ease;
+  -webkit-transition:opacity 0.3s ease;
+  -o-transition:opacity 0.3s ease;
+  -moz-transition:opacity 0.3s ease;
+}
+
+#overText {
+  width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  padding-top: 220px;
+  position: relative;
+  text-align: center;
+}
+
+#score {
+  display: block;
+  opacity: 1;
+  width: 100px;
+  height: 50px;
+}
+
+#defaultCanvas0, #gameOver {
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin: auto;
+}
+
+#bottom {
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  height:7%;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  transition:height 0.3s ease;
+  -webkit-transition:height 0.3s ease;
+  -o-transition:height 0.3s ease;
+  -moz-transition:height 0.3s ease;
+  z-index: 2;
+}
+
+#top {
+  position: fixed;
+  top:0;
+  width: 100%;
+  height:45px;
+  text-align: center;
+  z-index: 2;
+}
+
+#top h3 {
+  font-size: 30px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+}
+
+
+
+.wrapper {
+  z-index: 2;
+  bottom: 18%;
+    left:53%;
+    width:500px;
+    height:5em;
+    position:absolute;
+    margin: 0 0 0 -80px;
+    opacity: 1;
+    padding: 0;
+    /*Safari, Chrome */
+  -webkit-animation: fadeinlater 2s;
+  -webkit-animation-delay: 5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+    /*IE */
+  animation: fadeinlater 2s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.wrapper div {
+  display: inline-block;
+  z-index: 2;
+}
+
+
+.icon{
+
+  background-repeat:no-repeat;
+  background-position:center center;
+  height: 4em;
+  width: 4em;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+}
+
+.LINKY {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+
+#github{
+  background-image:url('pics/github.png');
+  background-size: 75%;
+}
+
+#github:hover{
+  transform:scale(1.1);
+}
+
+#linkedin{
+  background-image: url('pics/linkedin.png');
+  background-size: 55%;
+}
+
+#linkedin:hover{
+  transform:scale(1.1);
+}
+
+#instructions {
+  width: 100%;
+  height:auto;
+  background-color: black;
+  opacity:0;
+}
+
+#up {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:15%;
+  left:-2%;
+  bottom:0;
+  right:0;
+  margin: 0 auto;
+  opacity: 1;
+  background-image: url('pics/up.png');
+  background-repeat: none;
+}
+#down {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:80%;
+  left:-2%;
+  bottom:0;
+  right:0;
+  margin: 0 auto;
+  opacity: 1;
+  background-image: url('pics/down.png');
+  background-repeat: none;
+}
+#left {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:50%;
+  left:-82%;
+  bottom:0;
+  right:0;
+  margin: 0 auto;
+  opacity: 1;
+  background-image: url('pics/left.png');
+  background-repeat: none;
+}
+#right {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top:50%;
+  left:0;
+  bottom:0;
+  right:-84%;
+  margin: 0 auto;
+  opacity: 1;
+  background-image: url('pics/right.png');
+  background-repeat: none;
+}

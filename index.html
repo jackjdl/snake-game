@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>snake by jjdl</title>
+    <!-- <script src="snake.js"></script> -->
+    <script src="../assets/p5.min.js"></script>
+    <link rel='stylesheet' href='style.css'/>
+    <script src="sketch.js"></script>
+
+  </head>
+  <body>
+    <div id="top">
+      <h3>snake.</h3>
+    </div>
+
+    <div id="instructions">
+      <div id="up"></div>
+      <div id="down"></div>
+      <div id="left"></div>
+      <div id="right"></div>
+    </div>
+
+
+    <div id="gameOver">
+      <div id="overText">
+        <h1>Game Over!</h1>
+        <h2 id="final">Score: </h2>
+        <a href="">Play Again?</a>
+      </div>
+
+      <div class="wrapper">
+
+        <div class="icon" id="github"><a href="https://github.com/JJYDL" target="_blank">
+          <div class="LINKY"></div>
+        </a></div>
+        <div class="icon" id="linkedin"><a href="https://www.linkedin.com/in/jackjdl" target="_blank">
+          <div class="LINKY"></div>
+        </a></div>
+
+      </div>
+
+    </div>
+
+    <div id="bottom">
+      <ul id="list">
+
+        <li id="a"><p>W &#8593; &nbsp; &nbsp; &nbsp; &nbsp; A &#8592;</p></li>
+        <li><h3 id="running" style="padding-left:40px;padding-right:40px;">Score: </h3></li>
+        <li id="b"><p>&#8595; S &nbsp; &nbsp; &nbsp; &nbsp; &#8594; D</p></li>
+      </ul>
+    </div>
+
+    <script>
+      if(isMobile.any()) {
+        document.getElementById('instructions').style.opacity = 1;
+        var a = document.getElementById("a");
+        a.parentNode.removeChild(a);
+        var b = document.getElementById("b");
+        b.parentNode.removeChild(b);
+      }
+    </script>
+
+  </body>
+</html>

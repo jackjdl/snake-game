@@ -35,7 +35,7 @@ function setup() {
 //main loop
 function draw() {
   background(255);
-  frameRate(10);
+  frameRate(9);
   G.move();
   G.printGrid();
   updateScore();
